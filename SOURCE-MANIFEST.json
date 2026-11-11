@@ -1,0 +1,264 @@
+{
+  "snapshot_date": "2026-11-11",
+  "hyprland_version": "0.57.0-1.1",
+  "hyprland_commit": "0aa6745f705f2c4b0a5004eb019ef76e5bbdb426",
+  "hyprscape_local_base_commit": "1ec84050efccbb04e36ea02772dd5ca37ea1bc43",
+  "files": [
+    {
+      "path": "hyprscape/.clang-format",
+      "sha256": "0b88508735a1dfebbee756155e9f3d73d4e8f4aaf737b9323aa577ba371c8af5"
+    },
+    {
+      "path": "hyprscape/.clangd",
+      "sha256": "0eacb1a6ec583de53517dafb73305c1395f1e53be1ec4858467ac95a43875305"
+    },
+    {
+      "path": "hyprscape/.github/workflows/build.yml",
+      "sha256": "e358495c1074bce5b2885fd2ee73066bafc39ab3e5ef0f6becf5513997db39b4"
+    },
+    {
+      "path": "hyprscape/.gitignore",
+      "sha256": "77766a37da5416654c791c53d593375458fe1ef87141b9323a48495bac305977"
+    },
+    {
+      "path": "hyprscape/CHANGELOG.md",
+      "sha256": "82bd2338b4db5a717e93942fcc0aabd500449eb25c471c4b58a6faf2cfae7a92"
+    },
+    {
+      "path": "hyprscape/LICENSE",
+      "sha256": "9a0a8e2906922400aa605631d6985a01b76512d364704eb605a71a0a735aeb56"
+    },
+    {
+      "path": "hyprscape/Makefile",
+      "sha256": "d48e7ad4450a3690be088418242d309f9329dc20f35d369aa94fa576529afcda"
+    },
+    {
+      "path": "hyprscape/README.md",
+      "sha256": "6815104e7480b660ea5de85cf059520f403376707cc14c01490fa27b98972fa8"
+    },
+    {
+      "path": "hyprscape/assets/demo.png",
+      "sha256": "fc6d2e2c35789d4c10988dd0e89698fdaafb15943821a676af36e0dd26220eae"
+    },
+    {
+      "path": "hyprscape/build.sh",
+      "sha256": "5e3ce70cc6b7181ba5dc7a9e3b555be51414a1f1e9d9d944148d6507e55b5bb7"
+    },
+    {
+      "path": "hyprscape/flake.lock",
+      "sha256": "e2d456892d4edf016746addbe85ffc48c5128f3c4c9d058721c564a11cddb156"
+    },
+    {
+      "path": "hyprscape/flake.nix",
+      "sha256": "74c485eed7db143f66352ac037b9056bfe6c1713267c765016417be0d615da19"
+    },
+    {
+      "path": "hyprscape/hyprpm.toml",
+      "sha256": "c0a5379c1f21ed055573c7afe151a1d405ac88fb9a67dcd4f4c20f0fb33ce47c"
+    },
+    {
+      "path": "hyprscape/packaging/arch/PKGBUILD",
+      "sha256": "cccaff04bd770a9a96897165d90fe1c0bb5739258fb1094102fad1591f00c935"
+    },
+    {
+      "path": "hyprscape/packaging/arch/PKGBUILD-git",
+      "sha256": "b4bc5be8d69dc629d395d6e0d3192490aff543598ecd4b29558e7dab14929995"
+    },
+    {
+      "path": "hyprscape/src/anim.cpp",
+      "sha256": "0580ca67b2bb8379ff41ecc02a6e0c34f7de1d8064207f7822d7b697341dab03"
+    },
+    {
+      "path": "hyprscape/src/anim.hpp",
+      "sha256": "645cc053f22ce09dd420e08b348b1d63a5000fb06c3d9159ebbca59296d12f2e"
+    },
+    {
+      "path": "hyprscape/src/config.hpp",
+      "sha256": "3fe0558526ae2c57f69e83630fac7fe5d435b488582939eab0a6b0d4dc16d65c"
+    },
+    {
+      "path": "hyprscape/src/globals.hpp",
+      "sha256": "4c4460c267db74029a623e2c08285ef0b721a670689733252291063dd99cd7f6"
+    },
+    {
+      "path": "hyprscape/src/input.cpp",
+      "sha256": "967dd4de64d323ba2ca81d058877bfda4b8a12bede6f2ef86be9ec07e0170f20"
+    },
+    {
+      "path": "hyprscape/src/main.cpp",
+      "sha256": "3da468f635665b23cae9604717e7181a24d77860014e810d411e51c49ed41d4e"
+    },
+    {
+      "path": "hyprscape/src/manager.cpp",
+      "sha256": "70c4917075f4395f098fd38e5350b4f9d67d78818367f7843c1bb4f1f39030c7"
+    },
+    {
+      "path": "hyprscape/src/manager.hpp",
+      "sha256": "b6339d9a0a09ac611040e8e8738b7cff34fcb998d37b4ef029dffc136fcd7a0c"
+    },
+    {
+      "path": "hyprscape/src/pass/pass_element.cpp",
+      "sha256": "93fce2596a149b3fac3e82390062745ff95d18efbccde15b7a73553be6d23f16"
+    },
+    {
+      "path": "hyprscape/src/pass/pass_element.hpp",
+      "sha256": "83b7012951b7a7b8d02913329438944ddb898377a9752148907912392d549243"
+    },
+    {
+      "path": "hyprscape/src/render.cpp",
+      "sha256": "5588b46dce0718d463339e3845fbfa2baa702ed14c9f49cf61311c4964890c21"
+    },
+    {
+      "path": "hyprscape/src/render.hpp",
+      "sha256": "bdc8241b1ab933189eee1699baffa88f21a763c0d2a8364f8fe8a731ec768237"
+    },
+    {
+      "path": "hyprscape/src/types.hpp",
+      "sha256": "b4ae84d867ef4149658621aee42f46d77bd9f453e0e6d3b6c2c2543f59947cde"
+    },
+    {
+      "path": "hyprscape/src/version.hpp",
+      "sha256": "1e0095c3d5076214fea60e0bc8ad43411f921fe662d81fcdeb9f88bba6fce8da"
+    },
+    {
+      "path": "hyprscape/src/view.cpp",
+      "sha256": "5ed6c60c2c968abde9b8c8f921b245aa5f6b1ba0de4cf63568e9d46a2e7835d9"
+    },
+    {
+      "path": "hyprscape/src/view.hpp",
+      "sha256": "ce0babbbd89b3ce12c5efcc5a41e2cd24f32c146cabe7ab902f888a181523b39"
+    },
+    {
+      "path": "hyprscape/test/nested.lua",
+      "sha256": "f596183f38d7a16a0f83a0869dcd6c36fe7b0ccab62f1d9e2467295c6e9f5a1e"
+    },
+    {
+      "path": "hyprscape/test/nested.sh",
+      "sha256": "fc6e22fcc0e1284a61d58a2ad16f0ff3e3afee1679ec51638650046551dfb75d"
+    },
+    {
+      "path": "hyprland/xdph.conf",
+      "sha256": "6f00d94324f1ad1a767094bf172ffe4e7e92728b56be292ebd201779c252e236"
+    },
+    {
+      "path": "hyprland/monitor-profiles.json",
+      "sha256": "20ffc9890fa71698031a368ffc9114552b7ebaf8fc42aab144f393a6925a47fe"
+    },
+    {
+      "path": "hyprland/overview.json",
+      "sha256": "d03dab66d13c3c53d1c977fe2aad478a7702c6b46ef9db798466ae43e305c8de"
+    },
+    {
+      "path": "hyprland/hyprland.lua",
+      "sha256": "07ba4820fb88228ae3b89d0ef915d8b2d9ac4c1aed51f1213c736918afee948a"
+    },
+    {
+      "path": "hyprland/perf-profiles.json",
+      "sha256": "4e17ef24c8304d1b68efd2d2bd063dfab8ec3b3f7c08c718cfe3674728f300f1"
+    },
+    {
+      "path": "hyprland/config/colors.lua",
+      "sha256": "e32ea13e5dce785b27e9b57cf1864e585683fc1278d30ea2482e54c3e5ce791a"
+    },
+    {
+      "path": "hyprland/config/decorations.lua",
+      "sha256": "67cf43fdfccbe2489e1a35e3066c58e022873adbab993d849b29647c8d635e73"
+    },
+    {
+      "path": "hyprland/config/environment.lua",
+      "sha256": "b6c1f27fdb74b554d24a484241f43c01b2fb1bdda0995aa12bbebb5cbfc84d59"
+    },
+    {
+      "path": "hyprland/config/inputs.lua",
+      "sha256": "15ca9ab6e869bcd7bafe585953a30e830e97d9559ef10980d5251513d1b1a913"
+    },
+    {
+      "path": "hyprland/config/misc.lua",
+      "sha256": "4fd85f722a97734e5882e142ea9b468cf244870685b414c9beb2fb54d9aed7b3"
+    },
+    {
+      "path": "hyprland/config/monitors.lua",
+      "sha256": "ac265a98c612c6a45e5bafee46ccd3d13eecba93dfe8bf9b5167da6a12c77905"
+    },
+    {
+      "path": "hyprland/config/variables.lua",
+      "sha256": "9001fc820ab7334e4ed068bd416f7c1e335df596017c3c8cb893a8ec1ed38166"
+    },
+    {
+      "path": "hyprland/config/workspaces.lua",
+      "sha256": "6c2ac6c57515065274fac7ac07d5c3560c332f464df6f2885533acf89bdda079"
+    },
+    {
+      "path": "hyprland/config/gui-settings.lua",
+      "sha256": "a3ad33c63c0c23b0b5dc087b2d6eb1139d2164a81869aa0868e9a543040a7a31"
+    },
+    {
+      "path": "hyprland/config/autostart.lua",
+      "sha256": "12fb79f5fc3ae4b784fe96f9e03bdd557a4c5bd240f03a360d2c2550f8361484"
+    },
+    {
+      "path": "hyprland/config/binds.lua",
+      "sha256": "aa15c11fa8f62b1e60a6aea978abcda75ddcbd467768dae5329bf8ec908a2ea7"
+    },
+    {
+      "path": "hyprland/config/windowrules.lua",
+      "sha256": "e0ec713a21a5bb5d0662d01fb9bbc8bad17476cbdd3a707ef54da95e79084316"
+    },
+    {
+      "path": "hyprland/config/overview.lua",
+      "sha256": "35258de6e6a0688b239d29ac71bd1fb9c62365c429abf95769d38d9b99ec9a34"
+    },
+    {
+      "path": "hyprland/config/cursor-shake.lua",
+      "sha256": "8348039bdb9ad4d98b80c158f2dbd231ec4cf1e7ada2ea26531279418350e046"
+    },
+    {
+      "path": "hyprland/config/cursor-settings.lua",
+      "sha256": "fb4b167eccb81f7ff47aa4a6f4bcb0bcd9a6781e6bf5bc29e06abe7f5f344fb3"
+    },
+    {
+      "path": "hyprland/config/animations.lua",
+      "sha256": "8859aa901cabba083c179afa152e9fa40a5565f314754c2b749d1bf3fe69e683"
+    },
+    {
+      "path": "hyprland/config/grid.lua",
+      "sha256": "8ff013348064a7f7406da6f48e081c50b27aca73e68a47393dad6a686ed1eb78"
+    },
+    {
+      "path": "hyprland/scripts/grid-clamp.sh",
+      "sha256": "54a8bcddbad21adf71003e6c2bb4f16cafbf1a332da53d599e3965d24800b65a"
+    },
+    {
+      "path": "hyprland/rice-configs/index.json",
+      "sha256": "55a73bd645309d209d21a2cb6441a6e4d276e1806c20520118b5932593356bab"
+    },
+    {
+      "path": "hyprland/rice-configs/balanced.json",
+      "sha256": "149224248f4107e3c63a3c370e785759f77d8b6a31a5d26a79dc70406510ba9e"
+    },
+    {
+      "path": "hyprland/rice-configs/peak.json",
+      "sha256": "e9fcc13f2b30ec9a93c4e51e48ceebe281e1c6a13ddc237c94fd6840b6818d43"
+    },
+    {
+      "path": "hyprland/rice-configs/beauty.json",
+      "sha256": "03d4a43c2da521b0953270be78f1639ceb88b7b091249aa080dc8a7516df0261"
+    },
+    {
+      "path": "hyprland/rice-configs/performance.json",
+      "sha256": "67d86d63354ef824b16d1030fe7d71410d6716a887d9f252fd5e7077b92e9d5b"
+    },
+    {
+      "path": "starter/config/animations.lua",
+      "sha256": "8859aa901cabba083c179afa152e9fa40a5565f314754c2b749d1bf3fe69e683"
+    },
+    {
+      "path": "starter/config/colors.lua",
+      "sha256": "e32ea13e5dce785b27e9b57cf1864e585683fc1278d30ea2482e54c3e5ce791a"
+    },
+    {
+      "path": "starter/config/decorations.lua",
+      "sha256": "67cf43fdfccbe2489e1a35e3066c58e022873adbab993d849b29647c8d635e73"
+    }
+  ]
+}

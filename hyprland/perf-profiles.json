@@ -1,0 +1,49 @@
+{
+  "active_profile": "balanced",
+  "custom_profiles": {
+    "__live_balanced": {
+      "name": "__live_balanced",
+      "builtin": false,
+      "base_level": "beauty",
+      "active_opacity": 1.0,
+      "inactive_opacity": 1.0,
+      "blur": true,
+      "animations": true,
+      "we_fps": 30,
+      "scx": false,
+      "bg_priority": false,
+      "bg_nice": 10,
+      "fence": false,
+      "ollama": false,
+      "vm": false,
+      "vesktop_quit": false,
+      "upscale": true,
+      "mangohud": false,
+      "gamemode": false,
+      "steam_overlay_off": false,
+      "dxvk_async": false
+    },
+    "__active": {
+      "name": "__active",
+      "builtin": false,
+      "base_level": "balanced",
+      "active_opacity": 1.0,
+      "inactive_opacity": 1.0,
+      "blur": true,
+      "animations": true,
+      "we_fps": 30,
+      "scx": false,
+      "bg_priority": false,
+      "bg_nice": 10,
+      "fence": false,
+      "ollama": false,
+      "vm": false,
+      "vesktop_quit": false,
+      "upscale": true,
+      "mangohud": false,
+      "gamemode": false,
+      "steam_overlay_off": false,
+      "dxvk_async": false
+    }
+  }
+}

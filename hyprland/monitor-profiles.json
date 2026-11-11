@@ -1,0 +1,35 @@
+{
+  "active": "Current",
+  "profiles": {
+    "Current": [
+      {
+        "name": "HDMI-A-1",
+        "x": -1920,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "mode_w": 1920,
+        "mode_h": 1080,
+        "refresh": 60.0,
+        "scale": 1.0,
+        "transform": 0,
+        "disabled": false,
+        "custom": false
+      },
+      {
+        "name": "DP-2",
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "mode_w": 1920,
+        "mode_h": 1080,
+        "refresh": 165.00301,
+        "scale": 1.0,
+        "transform": 0,
+        "disabled": false,
+        "custom": false
+      }
+    ]
+  }
+}

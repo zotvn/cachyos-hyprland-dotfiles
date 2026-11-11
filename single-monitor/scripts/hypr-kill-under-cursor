@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+"""Kill whatever window is actually under the pointer.
+
+Hyprland reports every workspace's windows at the same monitor coordinates,
+so the first geometric hit is often Steam or Spotify on a hidden workspace.
+Only the active workspace counts. Raw `hyprctl dispatch` is swallowed by this
+build, so the close goes through `hyprctl eval`. If the window refuses close
+(games), the process is SIGKILL'd.
+"""
+
+from __future__ import annotations
+
+import json
+import os
+import signal
+import subprocess
+
+
+def hypr_json(command: str):
+    out = subprocess.check_output(["hyprctl", "-j", command], text=True, timeout=2)
+    return json.loads(out)
+
+
+def main() -> int:
+    pos = subprocess.check_output(["hyprctl", "cursorpos"], text=True, timeout=2).strip()
+    x_s, y_s = [part.strip() for part in pos.split(",")]
+    x, y = float(x_s), float(y_s)
+
+    workspace_id = None
+    for mon in hypr_json("monitors"):
+        mx, my = float(mon.get("x") or 0), float(mon.get("y") or 0)
+        mw, mh = float(mon.get("width") or 0), float(mon.get("height") or 0)
+        if mx <= x < mx + mw and my <= y < my + mh:
+            workspace_id = (mon.get("activeWorkspace") or {}).get("id")
+            break
+
+    hits = []
+    for client in hypr_json("clients"):
+        if not client.get("mapped") or client.get("hidden") or not client.get("visible", True):
+            continue
+        ws = client.get("workspace") or {}
+        if workspace_id is not None and isinstance(ws, dict) and ws.get("id") != workspace_id:
+            continue
+        at = client.get("at") or [0, 0]
+        size = client.get("size") or [0, 0]
+        try:
+            ax, ay = float(at[0]), float(at[1])
+            sw, sh = float(size[0]), float(size[1])
+        except (TypeError, ValueError, IndexError):
+            continue
+        if sw < 1 or sh < 1:
+            continue
+        if ax <= x < ax + sw and ay <= y < ay + sh:
+            hits.append(client)
+    if not hits:
+        return 0
+
+    floating = [client for client in hits if client.get("floating")]
+    pool = floating or hits
+    pool.sort(key=lambda client: client.get("focusHistoryID", 9999))
+    hit = pool[0]
+
+    address = hit.get("address")
+    if address:
+        target = json.dumps(str(address))
+        lua = (
+            f"local target={target};"
+            "for _, w in ipairs(hl.get_windows()) do "
+            "if w.address==target then hl.dispatch(hl.dsp.window.close({window=w})) return end "
+            "end"
+        )
+        subprocess.run(["hyprctl", "eval", lua], timeout=2, check=False)
+
+    pid = int(hit.get("pid") or 0)
+    if pid > 1:
+        try:
+            os.kill(pid, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -259,6 +259,14 @@
     {
       "path": "starter/config/decorations.lua",
       "sha256": "67cf43fdfccbe2489e1a35e3066c58e022873adbab993d849b29647c8d635e73"
+    },
+    {
+      "path": "single-monitor/scripts/hypr-kill-under-cursor",
+      "sha256": "cd7642bf8742b1054e4858b5d6bac0e45355965e718848215ac83129fd201146"
+    },
+    {
+      "path": "single-monitor/scripts/screenshot-clipboard.sh",
+      "sha256": "91f5d71c740f4ce33820edd7951c9c8d167eced48b85db4b4719310d1429b966"
     }
   ]
 }
